@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 7vh;
+    font-family: tahoma;
+    color: blueviolet;
+}
+body{
+    background-color: #AE9F92;
+    overflow: hidden;
+}
+.container{
+    background-color: #fff;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 40vh 0;
+    margin: auto;
+    position: relative;
+    top: 5vh;
+}
+.box{
+    transform: skew(-8deg) ;
+    /* animation: boxanimate 5s 1 5s; */
+}
+.front{
+    background-color: rgba(0, 255, 255, 0.762);
+    height: 30vh;
+    width: 25vh;
+    position: absolute;
+    top: 35vh;
+    left: 30vh;
+    transform: skewY(20deg);
+    z-index: 20;
+    animation: animatef 5s 1;
+}
+.back{
+    content: "hi hi";
+    background-color: rgba(247, 15, 111, 0.5);
+    height: 30vh;
+    width: 25vh;
+    color: yellow;
+    position: absolute;
+    top: 30.5vh;
+    left: 36.4vh;
+    z-index: 1;
+    transform: skewY(20deg) rotateY(0deg) rotateX(0deg);
+    animation: animateb 5s 1;
+}
+.left{
+    content: "hi hi";
+    background-color: rgba(190, 55, 25, 0.5);
+    height: 30vh;
+    width: 25vh;
+    color: yellow;
+    position: absolute;
+    top: 28vh;
+    left: 20.7vh;
+    transform: skewY(-35deg) rotateY(0deg) rotatey(75deg);
+    animation: animatelr 5s 1;
+    z-index: 19;
+}
+.right{
+    content: "hi hi";
+    background-color: rgba(0, 25, 25, 0.5);
+    height: 30vh;
+    width: 25vh;
+    color: yellow;
+    position: absolute;
+    top: 37.3vh;
+    left: 45.6vh;
+    z-index: 2;
+    transform: skewY(-35deg) rotateY(0deg) rotatey(75deg);
+    animation: animatelr 5s 1;
+}
+.right h1{
+    transform: translate(8vh) translatey(6vh) rotate(-90deg);
+    font-size: 6vh;
+}
+.top{
+    content: "hi hi";
+    background-color: rgba(134, 255, 25, 0.5);
+    height: 7.2vh;
+    width: 40vh;
+    color: yellow;
+    position: absolute;
+    top: 29vh;
+    left: 25.65vh;
+    transform: skewx(-55deg) rotatex(50deg) rotateY(17.5deg) rotateZ(0deg);
+    z-index: 0;
+    animation: animatetb 5s 1;
+}
+.bottom{
+    content: "hi hi";
+    background-color: rgba(134, 255, 25, 0.5);
+    height: 7.2vh;
+    width: 40vh;
+    color: yellow;
+    position: absolute;
+    top: 59vh;
+    left: 25.65vh;
+    z-index: 15;
+    transform: skewx(-55deg) rotatex(50deg) rotateY(17.5deg) rotateZ(0deg);
+    animation: animatetb 5s 1;
+}
+@keyframes animatetb {
+    20%{
+        transform: rotateX(155deg) translatex(100vh) translateY(-315vh);
+    }
+    40%{
+        transform: rotateY(15deg);
+    }
+    60%{
+        transform: rotatez(15deg) translate(50vh);
+    }
+    80%{
+        transform: rotate(40deg) translatex(50vh);
+    }
+}
+@keyframes animatelr {
+    20%{
+        transform: rotateX(-155deg) translatex(-100vh) translateY(315vh);
+    }
+    40%{
+        transform: rotateY(-15deg);
+    }
+    60%{
+        transform: rotatez(-15deg) translate(-50vh);
+    }
+    80%{
+        transform: rotate(-40deg) translatex(-50vh);
+    }
+}
+@keyframes animateb {
+    20%{
+        transform: rotateX(5deg) translatex(10vh) translateY(15vh);
+    }
+    40%{
+        transform: rotateY(15deg);
+    }
+    60%{
+        transform: rotatez(15deg) translate(5vh);
+    }
+    80%{
+        transform: rotate(40deg) translatex(5vh);
+    }
+}
+@keyframes animatef {
+    20%{
+        transform: rotateX(-5deg) translatex(-10vh) translateY(-15vh);
+    }
+    40%{
+        transform: rotateY(-15deg);
+    }
+    60%{
+        transform: rotatez(-15deg) translate(-5vh);
+    }
+    80%{
+        transform: rotate(-40deg) translatex(-5vh);
+    }
+}
+/* @keyframes boxanimate {
+    40%{
+        transform: skew(10deg);
+    }
+    80%{
+        transform: skew(-10deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+} */
